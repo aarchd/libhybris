@@ -6,7 +6,7 @@ option('default_egl_platform', type : 'string', value : 'null', description : 'U
 option('default_hybris_ld_library_path', type : 'string', description : 'Use PATH1:PATH2 for default HYBRIS_LD_LIBRARY_PATH if not specified by environment')
 option('enable_debug', type : 'boolean', value : false, description : 'Enable debug build')
 option('enable_trace', type : 'boolean', value : false, description : 'Enable TRACE statements')
-option('glvnd', type : 'boolean', value : 'false', description : 'Enable GLVND support')
+option('glvnd', type : 'boolean', value : false, description : 'Enable GLVND support')
 option('property_cache', type : 'boolean', value : false, description : 'Enable runtime android property cache')
 option('stub_linker', type : 'boolean', value : false, description : 'Enable property cache')
 option('ubuntu_camera_headers', type : 'boolean', value : false, description : 'Enable Ubuntu camera headers')

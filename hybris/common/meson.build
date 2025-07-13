@@ -40,7 +40,7 @@ if android_headers_major >= 4 and android_headers_minor >= 1
   add_project_arguments('-DHAS_ANDROID_4_1_0', language : 'cpp')
 endif
 
-if get_option('arch') != 'arm64' and get_option('arch') != 'x86_64'
+if get_option('arch') != 'arm64' and get_option('arch') != 'x86-64'
   add_project_arguments('-DWANT_LINKER_JB', language : 'c')
 endif
 
@@ -65,7 +65,7 @@ if android_headers_major >= 6
   subdir('mm')
 endif
 
-if get_option('arch') != 'arm64' and get_option('arch') != 'x86_64'
+if get_option('arch') != 'arm64' and get_option('arch') != 'x86-64'
   subdir('jb')
 endif
 
