@@ -73,6 +73,8 @@ if get_option('stub_linker')
   subdir('stub')
 endif
 
+subdir('hooks')
+
 libhybris_common_sources = [
   'hooks.c',
   'hooks_shm.c',
@@ -112,6 +114,7 @@ libhybris_common = library('hybris-common',
   dependencies : libhybris_common_deps,
   pic : true,
   version : '1.0.0',
+  link_with: [hooks_lib],
   install : true
 )
 
